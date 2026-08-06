@@ -20,11 +20,16 @@
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
+            
             }
             img{
                 width: 80px;
                 height: 80px;
+            } 
+            .artigo-autor {
+                font-weight: bold;
             }
+
        </style>
     </head>
     <body>
@@ -33,13 +38,30 @@
             <p>Vou compartilhar noticias sobre o volei</p>
         </header>
         </main>
-            <img src="laiz-blog.pngl" alt="O vôlei é um esporte dinâmico jogado entre duas equipes em uma quadra dividida por uma rede. O objetivo principal é fazer a bola passar por cima da rede e tocar o chão do lado adversário, usando no máximo três toques por jogada. Com modalidades na quadra e na praia, o esporte exige rapidez, estratégia e, acima de tudo, um forte trabalho em equipe para conectar saques, recepções, levantamentos e ataques
-            .">
-            <h2>Meu primeiro post</h2>
-            <p>por:Lays Mendes</p>
-            <p>Bem-vindas ao meu blog! aqui vou compatilhar algumas noticias sobre o volei.</p>
-            <p>teste cor</p>
-        </header>      
+           
+            <img sr
+            z
+                 
+                 <h2>Meu primeiro post</h2>
+                 <p classe="artigo-autor">por:Lays Mendes</p>
+                 <p>Bem-vindas ao meu blog! aqui vou compatilhar algumas noticias sobre o volei.</p>
+                 <button>😁​ <span>0</span></button>
+                 <button>👍​​ <span>0</span></button>
+            </div>
         </main>
     </body>
-</html>>
+    <script>
+        const botoes = document.querySelectorAll{"button"};
+       
+        botoes.forEach( function(botao){
+            botao.addEventilistener("click", botaoClicado);
+            function botaoClicado(){
+                 console.log("fui clicado");
+                 let texto = botao.querySelector("span");
+                 texto.textContent++;
+            }
+        }) 
+
+
+    </script>
+    </html>
